@@ -8,7 +8,7 @@ const orderRoutes=require('./routers/orders')
 
 app.use(express.json())
 app.use(cors())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: false }))
 
 app.use(userRoutes)
 app.use(orderRoutes)
